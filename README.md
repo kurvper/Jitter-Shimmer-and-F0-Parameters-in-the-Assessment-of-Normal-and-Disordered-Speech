@@ -1,0 +1,1 @@
+# Jitter-Shimmer-and-F0-Parameters-in-the-Assessment-of-Normal-and-Disordered-Speech
