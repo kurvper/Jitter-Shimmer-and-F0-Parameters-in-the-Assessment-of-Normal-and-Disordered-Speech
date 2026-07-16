@@ -5,13 +5,13 @@ clear; clc;
 % SZUKANIE PLIKÓW REKURENCYJNIE
 %% =========================
 
-pathHealthy = 'prawidłowa';
-pathPath = 'patologiczna';
+projectFolder = fileparts(mfilename('fullpath'));
+
+pathHealthy = fullfile(projectFolder, 'prawidłowa');
+pathPath = fullfile(projectFolder, 'patologiczna');
 
 filesH = dir(fullfile(pathHealthy, '**', '*.wav'));
 filesP = dir(fullfile(pathPath, '**', '*.wav'));
-
-allFiles = [filesH; filesP];
 
 %% =========================
 % WYNIKI
